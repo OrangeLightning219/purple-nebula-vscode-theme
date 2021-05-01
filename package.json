@@ -1,0 +1,21 @@
+{
+    "name": "lite-dark-theme",
+    "displayName": "Lite Dark Theme",
+    "description": "Dark theme based on the default lite theme.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.55.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Lite Dark Theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Lite Dark Theme-color-theme.json"
+            }
+        ]
+    }
+}

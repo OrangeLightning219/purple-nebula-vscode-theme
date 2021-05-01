@@ -1,0 +1,293 @@
+{
+	"name": "Lite Dark Theme",
+	"type": "dark",
+	"colors": {
+		"editor.background": "#2E2E32",
+		"editor.foreground": "#E1E1E4",
+		"activityBarBadge.background": "#964687",
+		"sideBarTitle.foreground": "#D78AC9",
+		"button.background": "#964687",
+		"button.hoverBackground": "#b352a1",
+		"button.secondaryBackground": "#964687",
+		"button.secondaryHoverBackground": "#b352a1",
+		"activityBar.background": "#252529",
+		"sideBar.background": "#252529",
+		"editorLineNumber.foreground": "#434C57",
+		"editorLineNumber.activeForeground": "#83838B",
+		"editor.selectionBackground": "#964687",
+		"searchEditor.findMatchBackground": "#964687"
+	},
+	"tokenColors": [
+		{
+			"name": "Function declarations",
+			"scope": [
+				"entity.name.function",
+				"support.function",
+				"support.constant.handlebars",
+				"source.powershell variable.other.member",
+				"entity.name.operator.custom-literal" // See https://en.cppreference.com/w/cpp/language/user_literal
+			],
+			"settings": {
+				"foreground": "#E1E1E4"
+			}
+		},
+		{
+			"name": "Types declaration and references",
+			"scope": [
+				"meta.return-type",
+				"support.class",
+				"support.type",
+				"entity.name.type",
+				"entity.name.namespace",
+				"entity.other.attribute",
+				"entity.name.scope-resolution",
+				"entity.name.class",
+				"storage.type.numeric.go",
+				"storage.type.byte.go",
+				"storage.type.boolean.go",
+				"storage.type.string.go",
+				"storage.type.uintptr.go",
+				"storage.type.error.go",
+				"storage.type.rune.go",
+				"storage.type.cs",
+				"storage.type.generic.cs",
+				"storage.type.modifier.cs",
+				"storage.type.variable.cs",
+				"storage.type.annotation.java",
+				"storage.type.generic.java",
+				"storage.type.java",
+				"storage.type.object.array.java",
+				"storage.type.primitive.array.java",
+				"storage.type.primitive.java",
+				"storage.type.token.java",
+				"storage.type.groovy",
+				"storage.type.annotation.groovy",
+				"storage.type.parameters.groovy",
+				"storage.type.generic.groovy",
+				"storage.type.object.array.groovy",
+				"storage.type.primitive.array.groovy",
+				"storage.type.primitive.groovy"
+			],
+			"settings": {
+				"foreground": "#93DDF8"
+			}
+		},
+		{
+			"name": "Types declaration and references, TS grammar specific",
+			"scope": [
+				"meta.type.cast.expr",
+				"meta.type.new.expr",
+				"support.constant.math",
+				"support.constant.dom",
+				"support.constant.json",
+				"entity.other.inherited-class"
+			],
+			"settings": {
+				"foreground": "#93DDF8"
+			}
+		},
+		{
+			"name": "Control flow / Special keywords",
+			"scope": [
+				"keyword.control",
+				"source.cpp keyword.operator.new",
+				"keyword.operator.delete",
+				"keyword.other.using",
+				"keyword.other.operator",
+				"entity.name.operator"
+			],
+			"settings": {
+				"foreground": "#E58AC9"
+			}
+		},
+		{
+			"name": "Variable and parameter name",
+			"scope": [
+				"variable",
+				"meta.definition.variable.name",
+				"support.variable",
+				"entity.name.variable"
+			],
+			"settings": {
+				"foreground": "#E1E1E4"
+			}
+		},
+		{
+			"name": "Constants and enums",
+			"scope": [
+				"variable.other.constant",
+				"variable.other.enummember"
+			],
+			"settings": {
+				"foreground": "#F1A94D",
+			}
+		},
+		{
+			"name": "Object keys, TS grammar specific",
+			"scope": [
+				"meta.object-literal.key"
+			],
+			"settings": {
+				"foreground": "#9CDCFE"
+			}
+		},
+		{
+			"name": "CSS property value",
+			"scope": [
+				"support.constant.property-value",
+				"support.constant.font-name",
+				"support.constant.media-type",
+				"support.constant.media",
+				"constant.other.color.rgb-value",
+				"constant.other.rgb-value",
+				"support.constant.color"
+			],
+			"settings": {
+				"foreground": "#CE9178"
+			}
+		},
+		{
+			"name": "Regular expression groups",
+			"scope": [
+				"punctuation.definition.group.regexp",
+				"punctuation.definition.group.assertion.regexp",
+				"punctuation.definition.character-class.regexp",
+				"punctuation.character.set.begin.regexp",
+				"punctuation.character.set.end.regexp",
+				"keyword.operator.negation.regexp",
+				"support.other.parenthesis.regexp"
+			],
+			"settings": {
+				"foreground": "#F7C759"
+			}
+		},
+		{
+			"scope": [
+				"constant.character.character-class.regexp",
+				"constant.other.character-class.set.regexp",
+				"constant.other.character-class.regexp",
+				"constant.character.set.regexp"
+			],
+			"settings": {
+				"foreground": "#d16969"
+			}
+		},
+		{
+			"scope": [
+				"keyword.operator.or.regexp",
+				"keyword.control.anchor.regexp"
+			],
+			"settings": {
+				"foreground": "#DCDCAA"
+			}
+		},
+		{
+			"scope": "keyword.operator.quantifier.regexp",
+			"settings": {
+				"foreground": "#d7ba7d"
+			}
+		},
+		{
+			"scope": "constant.character",
+			"settings": {
+				"foreground": "#569cd6"
+			}
+		},
+		{
+			"scope": "constant.character.escape",
+			"settings": {
+				"foreground": "#d7ba7d"
+			}
+		},
+		{
+			"scope": "entity.name.label",
+			"settings": {
+				"foreground": "#C8C8C8"
+			}
+		},
+		{
+			"scope": "storage.type.built-in.primitive.cpp",
+			"settings": {
+				"foreground": "#EC7483"
+			}
+		},
+		{
+			"scope": ["variable.language.this.cpp",
+				"storage.modifier.specifier.static.cpp",
+				"storage.modifier.static.cpp",
+				"storage.type.struct.cpp",
+				"storage.type.class.cpp",
+				"storage.type.enum.cpp",
+				"storage.type.enum.enum-key.class.cpp",
+				"storage.type.modifier.access.control.public.cpp",
+				"storage.type.modifier.access.control.private.cpp",
+				"storage.type.modifier.access.control.protected.cpp",
+				"storage.modifier.specifier.extern.cpp",
+				"constant.language.nullptr.cpp"],
+			"settings": {
+				"foreground": "#E58AC9"
+			}
+		},
+		{
+			"scope": ["punctuation.definition.comment.cpp",
+				"punctuation.definition.comment.begin.cpp",
+				"punctuation.definition.comment.end.cpp",
+				"comment.block.cpp",
+				"comment.line.double-slash.cpp"],
+			"settings": {
+				"foreground": "#676B6E"
+			}
+		},
+		{
+			"scope": ["keyword.operator.cpp",
+				"keyword.operator.assignment.cpp",
+				"keyword.operator.comparison.cpp",
+				"keyword.operator.increment.cpp",
+				"keyword.operator.decrement.cpp",
+				"keyword.operator.bitwise.shift.cpp",
+				"keyword.operator.logical.cpp",
+				"keyword.operator.assignment.compound.cpp",
+				"keyword.operator.ternary.cpp",
+				"punctuation.section.angle-brackets.begin.template.call.cpp",
+				"punctuation.section.angle-brackets.end.template.call.cpp",
+				"punctuation.separator.pointer-access.cpp",
+				"punctuation.separator.dot-access.cpp",
+				"storage.modifier.pointer.cpp"],
+			"settings": {
+				"foreground": "#93DDF8"
+			}
+		},
+		{
+			"scope": ["punctuation.definition.string.begin.cpp",
+				"punctuation.definition.string.end.cpp",
+				"string.quoted.double.cpp",
+				"string.quoted.single.cpp",
+				"string.quoted.other.lt-gt.include.cpp",
+				"string.quoted.double.include.cpp",
+				"keyword.other.unit.suffix.floating-point.cpp",
+				"keyword.other.unit.suffix.integer.cpp"],
+			"settings": {
+				"foreground": "#F7C759"
+			}
+		},
+		{
+			"scope": "constant.numeric.decimal.cpp",
+			"settings": {
+				"foreground": "#F1A94D"
+			}
+		},
+	],
+	"semanticTokenColors": {
+		"newOperator":"#E58AC9",
+		"macro":"#E58AC9",
+		"stringLiteral":"#F7C759",
+		"customLiteral": "#F1A94D",
+		"numberLiteral": "#F1A94D",
+		"function": "#93DDF8",
+		"method": "#93DDF8",
+		"type":"#EC7483",
+		"namespace": "#c58838",
+		"templateType": "#EC7483",
+		"memberOperatorOverload": "#93DDF8"
+	}
+}
