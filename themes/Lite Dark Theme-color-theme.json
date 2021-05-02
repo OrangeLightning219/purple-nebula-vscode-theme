@@ -15,7 +15,41 @@
 		"editorLineNumber.foreground": "#434C57",
 		"editorLineNumber.activeForeground": "#83838B",
 		"editor.selectionBackground": "#964687",
-		"searchEditor.findMatchBackground": "#964687"
+		"tab.activeBorder": "#964687",
+		"tab.activeBackground": "#5a2951",
+		"tab.unfocusedActiveBackground": "#252529",
+		"titleBar.activeBackground": "#252529",
+		"titleBar.inactiveBackground": "#252529",
+		"tab.activeModifiedBorder": "#964687",
+		"focusBorder": "#964687",
+		"editorGroup.border": "#964687",
+		"editorGroupHeader.tabsBorder": "#964687",
+		"terminal.border": "#964687",
+		"terminal.background": "#252529",
+		"notificationToast.border": "#964687",
+		"notifications.border": "#964687",
+		"notificationsErrorIcon.foreground": "#e833d8",
+		"notificationsWarningIcon.foreground": "#F1A94D",
+		"notificationsInfoIcon.foreground": "#004496",
+		"menubar.selectionBackground": "#964687",
+		"menu.selectionBackground": "#964687",
+		"menu.border": "#964687",
+		"menu.background": "#252529",
+		"panel.border": "#964687",
+		"list.activeSelectionBackground": "#5a2951",
+		"list.dropBackground": "#964687",
+		"statusBar.background": "#964687",
+		"editorSuggestWidget.selectedBackground": "#5a2951",
+		"editorSuggestWidget.highlightForeground": "#F1A94D",
+		"diffEditor.border": "#964687",
+		"diffEditor.insertedTextBackground": "#5a2951",
+		"diffEditor.removedTextBackground": "#852530",
+		"progressBar.background": "#964687",
+		"badge.background": "#964687",
+		"selection.background": "#964687",
+		"list.focusBackground": "#5a2951",
+		"editor.findMatchBackground": "#291225",
+		"editor.findMatchHighlightBackground": "#613559",
 	},
 	"tokenColors": [
 		{
@@ -94,7 +128,9 @@
 				"keyword.operator.delete",
 				"keyword.other.using",
 				"keyword.other.operator",
-				"entity.name.operator"
+				"entity.name.operator",
+				"support.type.python",
+				"keyword.command.batchfile"
 			],
 			"settings": {
 				"foreground": "#E58AC9"
@@ -206,13 +242,25 @@
 			}
 		},
 		{
-			"scope": "storage.type.built-in.primitive.cpp",
+			"scope": [
+				"storage.type.built-in.primitive.cpp",
+				"storage.type.built-in.primitive.c",
+				"punctuation.definition.decorator.python",
+				"entity.name.function.decorator.python",
+				"variable.parameter.function-call.python",
+				"constant.other.placeholder.c",
+				"constant.other.placeholder",
+				"punctuation.definition.list.begin.markdown",
+				"punctuation.definition.raw.markdown",
+				"punctuation.definition.markdown"
+			],
 			"settings": {
 				"foreground": "#EC7483"
 			}
 		},
 		{
-			"scope": ["variable.language.this.cpp",
+			"scope": [
+				"variable.language.this.cpp",
 				"storage.modifier.specifier.static.cpp",
 				"storage.modifier.static.cpp",
 				"storage.type.struct.cpp",
@@ -223,23 +271,30 @@
 				"storage.type.modifier.access.control.private.cpp",
 				"storage.type.modifier.access.control.protected.cpp",
 				"storage.modifier.specifier.extern.cpp",
-				"constant.language.nullptr.cpp"],
+				"constant.language.nullptr.cpp",
+				"storage.type.function.python",
+				"punctuation.definition.heading.markdown",
+				"fenced_code.block.language.markdown"
+			],
 			"settings": {
 				"foreground": "#E58AC9"
 			}
 		},
 		{
-			"scope": ["punctuation.definition.comment.cpp",
+			"scope": [
+				"punctuation.definition.comment.cpp",
 				"punctuation.definition.comment.begin.cpp",
 				"punctuation.definition.comment.end.cpp",
 				"comment.block.cpp",
-				"comment.line.double-slash.cpp"],
+				"comment.line.double-slash.cpp"
+			],
 			"settings": {
 				"foreground": "#676B6E"
 			}
 		},
 		{
-			"scope": ["keyword.operator.cpp",
+			"scope": [
+				"keyword.operator.cpp",
 				"keyword.operator.assignment.cpp",
 				"keyword.operator.comparison.cpp",
 				"keyword.operator.increment.cpp",
@@ -248,44 +303,83 @@
 				"keyword.operator.logical.cpp",
 				"keyword.operator.assignment.compound.cpp",
 				"keyword.operator.ternary.cpp",
+				"keyword.operator.assignment.c",
+				"keyword.operator.comparison.c",
+				"keyword.operator.increment.c",
+				"keyword.operator.decrement.c",
+				"keyword.operator.bitwise.shift.c",
+				"keyword.operator.logical.c",
+				"keyword.operator.assignment.compound.c",
 				"punctuation.section.angle-brackets.begin.template.call.cpp",
 				"punctuation.section.angle-brackets.end.template.call.cpp",
 				"punctuation.separator.pointer-access.cpp",
 				"punctuation.separator.dot-access.cpp",
-				"storage.modifier.pointer.cpp"],
+				"punctuation.separator.pointer-access.c",
+				"punctuation.separator.dot-access.c",
+				"storage.modifier.pointer.cpp",
+				"keyword.operator.c",
+				"meta.function-call.generic.python",
+				"keyword.operator.comparison.python",
+				"keyword.operator.assignment.python",
+				"keyword.operator.bitwise.python",
+				"keyword.operator.logical.python",
+				"punctuation.separator.period.python",
+				"punctuation.definition.italic.markdown",
+				"punctuation.definition.bold.markdown",
+				"punctuation.definition.quote.begin.markdown"
+			],
 			"settings": {
 				"foreground": "#93DDF8"
 			}
 		},
 		{
-			"scope": ["punctuation.definition.string.begin.cpp",
+			"scope": [
+				"punctuation.definition.string.begin.cpp",
 				"punctuation.definition.string.end.cpp",
+				"punctuation.definition.string.begin.c",
+				"punctuation.definition.string.end.c",
 				"string.quoted.double.cpp",
 				"string.quoted.single.cpp",
+				"string.quoted.double.c",
+				"string.quoted.single.c",
 				"string.quoted.other.lt-gt.include.cpp",
 				"string.quoted.double.include.cpp",
 				"keyword.other.unit.suffix.floating-point.cpp",
-				"keyword.other.unit.suffix.integer.cpp"],
+				"keyword.other.unit.suffix.integer.cpp",
+				"string.quoted.single.python",
+				"string.quoted.double.python",
+				"punctuation.definition.string.begin.markdown",
+				"punctuation.definition.string.end.markdown",
+				"string.other.link.title.markdown",
+				"string.other.link.description.markdown"
+			],
 			"settings": {
 				"foreground": "#F7C759"
 			}
 		},
 		{
-			"scope": "constant.numeric.decimal.cpp",
+			"scope": [
+				"constant.numeric.decimal.cpp",
+				"constant.numeric.dec.python",
+				"constant.numeric.decimal.c",
+				"punctuation.definition.metadata.markdown",
+				"markup.underline.link.markdown",
+				"markup.underline.link.image.markdown"
+			],
 			"settings": {
 				"foreground": "#F1A94D"
 			}
 		},
 	],
 	"semanticTokenColors": {
-		"newOperator":"#E58AC9",
-		"macro":"#E58AC9",
-		"stringLiteral":"#F7C759",
+		"newOperator": "#E58AC9",
+		"macro": "#E58AC9",
+		"stringLiteral": "#F7C759",
 		"customLiteral": "#F1A94D",
 		"numberLiteral": "#F1A94D",
 		"function": "#93DDF8",
 		"method": "#93DDF8",
-		"type":"#EC7483",
+		"type": "#EC7483",
 		"namespace": "#c58838",
 		"templateType": "#EC7483",
 		"memberOperatorOverload": "#93DDF8"

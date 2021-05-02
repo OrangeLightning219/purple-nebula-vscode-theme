@@ -1,4 +1,11 @@
 # My custom vs code theme
-VS Code theme based on the default theme from lite.
+VS Code theme based on the default theme from [lite](https://github.com/rxi/lite).
 
-Tested only with C++ so syntax highlighting for other languages may be weird or incomplete.
+Supported languages:
+
+* C
+* C++
+* Python
+* Markdown
+
+Other languages may be weird or incomplete.
