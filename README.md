@@ -1,11 +1,17 @@
-# My custom vs code theme
-VS Code theme based on the default theme from [lite](https://github.com/rxi/lite).
-
-Supported languages:
+# Purple Nebula Visual Studio Code Theme
+## Supported languages:
 
 * C
 * C++
+* Lua
 * Python
 * Markdown
+* Batch
 
 Other languages may be weird or incomplete.
+
+## Installation
+### Windows
+Run `install-windows.bat`
+### Linux
+Run `./install-linux.sh`

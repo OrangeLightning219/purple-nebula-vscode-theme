@@ -1,7 +1,7 @@
 {
-    "name": "lite-dark-theme",
-    "displayName": "Lite Dark Theme",
-    "description": "Dark theme based on the default lite theme.",
+    "name": "purple-nebula-dark-theme",
+    "displayName": "Purple Nebula",
+    "description": "",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.55.0"
@@ -12,9 +12,9 @@
     "contributes": {
         "themes": [
             {
-                "label": "Lite Dark Theme",
+                "label": "Purple Nebula Dark Theme",
                 "uiTheme": "vs-dark",
-                "path": "./themes/Lite Dark Theme-color-theme.json"
+                "path": "./themes/purple-nebula-color-theme.json"
             }
         ]
     }

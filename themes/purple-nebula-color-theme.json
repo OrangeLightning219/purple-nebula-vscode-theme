@@ -1,5 +1,5 @@
 {
-	"name": "Lite Dark Theme",
+	"name": "Purple Nebula",
 	"type": "dark",
 	"colors": {
 		"editor.background": "#2E2E32",
@@ -39,6 +39,7 @@
 		"list.activeSelectionBackground": "#5a2951",
 		"list.dropBackground": "#964687",
 		"statusBar.background": "#964687",
+		"statusBar.debuggingBackground": "#EC7483",
 		"editorSuggestWidget.selectedBackground": "#5a2951",
 		"editorSuggestWidget.highlightForeground": "#F1A94D",
 		"diffEditor.border": "#964687",
@@ -49,7 +50,7 @@
 		"selection.background": "#964687",
 		"list.focusBackground": "#5a2951",
 		"editor.findMatchBackground": "#291225",
-		"editor.findMatchHighlightBackground": "#613559",
+		"editor.findMatchHighlightBackground": "#613559"
 	},
 	"tokenColors": [
 		{
@@ -121,22 +122,6 @@
 			}
 		},
 		{
-			"name": "Control flow / Special keywords",
-			"scope": [
-				"keyword.control",
-				"source.cpp keyword.operator.new",
-				"keyword.operator.delete",
-				"keyword.other.using",
-				"keyword.other.operator",
-				"entity.name.operator",
-				"support.type.python",
-				"keyword.command.batchfile"
-			],
-			"settings": {
-				"foreground": "#E58AC9"
-			}
-		},
-		{
 			"name": "Variable and parameter name",
 			"scope": [
 				"variable",
@@ -155,7 +140,7 @@
 				"variable.other.enummember"
 			],
 			"settings": {
-				"foreground": "#F1A94D",
+				"foreground": "#F1A94D"
 			}
 		},
 		{
@@ -243,16 +228,29 @@
 		},
 		{
 			"scope": [
+				// C++
 				"storage.type.built-in.primitive.cpp",
+				// C
 				"storage.type.built-in.primitive.c",
+				"constant.other.placeholder.c",
+				// Python
 				"punctuation.definition.decorator.python",
 				"entity.name.function.decorator.python",
 				"variable.parameter.function-call.python",
-				"constant.other.placeholder.c",
-				"constant.other.placeholder",
+				// Markdown
 				"punctuation.definition.list.begin.markdown",
 				"punctuation.definition.raw.markdown",
-				"punctuation.definition.markdown"
+				"punctuation.definition.markdown",
+				// Batch
+				"keyword.other.special-method.batchfile",
+				"constant.language.batchfile",
+				// Lua
+				"support.function.library.lua",
+				"entity.name.class.lua",
+				//Shell
+				"string.interpolated.dollar.shell",
+				// Other
+				"constant.other.placeholder",
 			],
 			"settings": {
 				"foreground": "#EC7483"
@@ -260,6 +258,7 @@
 		},
 		{
 			"scope": [
+				// C++
 				"variable.language.this.cpp",
 				"storage.modifier.specifier.static.cpp",
 				"storage.modifier.static.cpp",
@@ -272,9 +271,28 @@
 				"storage.type.modifier.access.control.protected.cpp",
 				"storage.modifier.specifier.extern.cpp",
 				"constant.language.nullptr.cpp",
+				"keyword.other.using",
+				"keyword.operator.delete",
+				"source.cpp keyword.operator.new",
+				// Python
 				"storage.type.function.python",
+				"support.type.python",
+				// Markdown
 				"punctuation.definition.heading.markdown",
-				"fenced_code.block.language.markdown"
+				"fenced_code.block.language.markdown",
+				// Batch
+				"keyword.command.batchfile",
+				// Lua
+				"constant.language.lua",
+				"variable.language.self.lua",
+				"storage.modifier.local.lua",
+				"keyword.local.lua",
+				// Other
+				"keyword.control",
+				"keyword.other.operator",
+				"entity.name.operator",
+				// Shell
+				"support.function.builtin.shell"
 			],
 			"settings": {
 				"foreground": "#E58AC9"
@@ -282,11 +300,27 @@
 		},
 		{
 			"scope": [
+				// C++
 				"punctuation.definition.comment.cpp",
 				"punctuation.definition.comment.begin.cpp",
 				"punctuation.definition.comment.end.cpp",
 				"comment.block.cpp",
-				"comment.line.double-slash.cpp"
+				"comment.line.double-slash.cpp",
+				// C
+				"comment.block.c",
+				"punctuation.definition.comment.c",
+				"comment.line.double-slash.c",
+				// Batch
+				"keyword.command.rem.batchfile",
+				"comment.line.rem.batchfile",
+				"punctuation.definition.comment.batchfile",
+				"comment.line.colon.batchfile",
+				// JSON
+				"punctuation.definition.comment.json.comments",
+				"comment.line.double-slash.js",
+				// Lua
+				"punctuation.definition.comment.lua",
+				"comment.line.double-dash.lua"
 			],
 			"settings": {
 				"foreground": "#676B6E"
@@ -294,6 +328,7 @@
 		},
 		{
 			"scope": [
+				// C++
 				"keyword.operator.cpp",
 				"keyword.operator.assignment.cpp",
 				"keyword.operator.comparison.cpp",
@@ -303,6 +338,12 @@
 				"keyword.operator.logical.cpp",
 				"keyword.operator.assignment.compound.cpp",
 				"keyword.operator.ternary.cpp",
+				"punctuation.section.angle-brackets.begin.template.call.cpp",
+				"punctuation.section.angle-brackets.end.template.call.cpp",
+				"punctuation.separator.pointer-access.cpp",
+				"punctuation.separator.dot-access.cpp",
+				"storage.modifier.pointer.cpp",
+				// C
 				"keyword.operator.assignment.c",
 				"keyword.operator.comparison.c",
 				"keyword.operator.increment.c",
@@ -310,23 +351,41 @@
 				"keyword.operator.bitwise.shift.c",
 				"keyword.operator.logical.c",
 				"keyword.operator.assignment.compound.c",
-				"punctuation.section.angle-brackets.begin.template.call.cpp",
-				"punctuation.section.angle-brackets.end.template.call.cpp",
-				"punctuation.separator.pointer-access.cpp",
-				"punctuation.separator.dot-access.cpp",
 				"punctuation.separator.pointer-access.c",
 				"punctuation.separator.dot-access.c",
-				"storage.modifier.pointer.cpp",
 				"keyword.operator.c",
+				// Python
 				"meta.function-call.generic.python",
 				"keyword.operator.comparison.python",
 				"keyword.operator.assignment.python",
 				"keyword.operator.bitwise.python",
 				"keyword.operator.logical.python",
 				"punctuation.separator.period.python",
+				// Markdown
 				"punctuation.definition.italic.markdown",
 				"punctuation.definition.bold.markdown",
-				"punctuation.definition.quote.begin.markdown"
+				"punctuation.definition.quote.begin.markdown",
+				// Batch
+				"keyword.operator.at.batchfile",
+				"punctuation.separator.batchfile",
+				"punctuation.definition.variable.begin.batchfile",
+				"punctuation.definition.variable.end.batchfile",
+				"variable.other.readwrite.batchfile",
+				"punctuation.definition.variable.batchfile",
+				"variable.parameter.batchfile",
+				"keyword.operator.comparison.batchfile",
+				"keyword.operator.assignment.batchfile",
+				"keyword.operator.conditional.batchfile",
+				"keyword.operator.redirection.batchfile",
+				"keyword.operator.logical.batchfile",
+				// Lua
+				"punctuation.separator.parameter.lua",
+				"keyword.operator.lua",
+				"support.function.any-method.lua",
+				"entity.name.function.lua",
+				// Shell
+				"punctuation.definition.variable.shell",
+				"variable.other.normal.shell"
 			],
 			"settings": {
 				"foreground": "#93DDF8"
@@ -334,24 +393,38 @@
 		},
 		{
 			"scope": [
+				// C++
 				"punctuation.definition.string.begin.cpp",
 				"punctuation.definition.string.end.cpp",
-				"punctuation.definition.string.begin.c",
-				"punctuation.definition.string.end.c",
 				"string.quoted.double.cpp",
 				"string.quoted.single.cpp",
-				"string.quoted.double.c",
-				"string.quoted.single.c",
 				"string.quoted.other.lt-gt.include.cpp",
 				"string.quoted.double.include.cpp",
 				"keyword.other.unit.suffix.floating-point.cpp",
 				"keyword.other.unit.suffix.integer.cpp",
+				// C
+				"punctuation.definition.string.begin.c",
+				"punctuation.definition.string.end.c",
+				"string.quoted.double.c",
+				"string.quoted.single.c",
+				// Python
 				"string.quoted.single.python",
 				"string.quoted.double.python",
+				// Markdown
 				"punctuation.definition.string.begin.markdown",
 				"punctuation.definition.string.end.markdown",
 				"string.other.link.title.markdown",
-				"string.other.link.description.markdown"
+				"string.other.link.description.markdown",
+				// Batch
+				"constant.character.escape.batchfile",
+				"string.quoted.double.batchfile",
+				// JSON
+				"string.quoted.double.json",
+				// Lua
+				"string.quoted.double.lua",
+				"string.quoted.single.lua",
+				// Shell
+				"string.quoted.double.shell"
 			],
 			"settings": {
 				"foreground": "#F7C759"
@@ -359,29 +432,45 @@
 		},
 		{
 			"scope": [
+				// C++
 				"constant.numeric.decimal.cpp",
-				"constant.numeric.dec.python",
+				// C
 				"constant.numeric.decimal.c",
+				// Python
+				"constant.numeric.dec.python",
+				// Markdown
 				"punctuation.definition.metadata.markdown",
 				"markup.underline.link.markdown",
-				"markup.underline.link.image.markdown"
+				"markup.underline.link.image.markdown",
+				// Batch
+				"constant.numeric.batchfile",
+				// Lua
+				"constant.numeric.integer.lua",
+				"constant.numeric.float.lua"
 			],
 			"settings": {
 				"foreground": "#F1A94D"
 			}
-		},
+		}
 	],
 	"semanticTokenColors": {
 		"newOperator": "#E58AC9",
 		"macro": "#E58AC9",
-		"stringLiteral": "#F7C759",
-		"customLiteral": "#F1A94D",
-		"numberLiteral": "#F1A94D",
+		"keyword": "#E58AC9",
 		"function": "#93DDF8",
 		"method": "#93DDF8",
+		"operator": "#93DDF8",
 		"type": "#EC7483",
-		"namespace": "#c58838",
 		"templateType": "#EC7483",
-		"memberOperatorOverload": "#93DDF8"
+		"class": "#EC7483",
+		"enum": "#EC7483",
+		"interface": "#EC7483",
+		"struct": "#EC7483",
+		"namespace": "#c58838",
+		"enumMember": "#F1A94D",
+		"customLiteral": "#F1A94D",
+		"number": "#F1A94D",
+		"string": "#F7C759",
+		"comment": "#676B6E",
 	}
 }
