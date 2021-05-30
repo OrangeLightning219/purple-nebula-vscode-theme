@@ -5,6 +5,7 @@
 * C++
 * Lua
 * Python
+* Odin
 * Markdown
 * Batch
 

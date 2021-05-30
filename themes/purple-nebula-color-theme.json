@@ -249,6 +249,9 @@
 				"entity.name.class.lua",
 				//Shell
 				"string.interpolated.dollar.shell",
+				// Odin
+				"storage.type.odin",
+				"constant.language.odin",
 				// Other
 				"constant.other.placeholder",
 			],
@@ -320,7 +323,12 @@
 				"comment.line.double-slash.js",
 				// Lua
 				"punctuation.definition.comment.lua",
-				"comment.line.double-dash.lua"
+				"comment.line.double-dash.lua",
+				// Odin
+				"comment.line.double-slash.odin",
+				"comment.block.odin",
+				// Python
+				"comment.line.number-sign.python"
 			],
 			"settings": {
 				"foreground": "#676B6E"
@@ -385,7 +393,10 @@
 				"entity.name.function.lua",
 				// Shell
 				"punctuation.definition.variable.shell",
-				"variable.other.normal.shell"
+				"variable.other.normal.shell",
+				// Odin
+				"support.function.odin",
+				"entity.name.function.odin"
 			],
 			"settings": {
 				"foreground": "#93DDF8"
@@ -424,7 +435,10 @@
 				"string.quoted.double.lua",
 				"string.quoted.single.lua",
 				// Shell
-				"string.quoted.double.shell"
+				"string.quoted.double.shell",
+				// Odin
+				"string.quoted.single.odin",
+				"string.quoted.double.odin"
 			],
 			"settings": {
 				"foreground": "#F7C759"
@@ -446,7 +460,9 @@
 				"constant.numeric.batchfile",
 				// Lua
 				"constant.numeric.integer.lua",
-				"constant.numeric.float.lua"
+				"constant.numeric.float.lua",
+				// Odin
+				"constant.numeric.odin"
 			],
 			"settings": {
 				"foreground": "#F1A94D"
@@ -466,6 +482,7 @@
 		"enum": "#EC7483",
 		"interface": "#EC7483",
 		"struct": "#EC7483",
+		"variable.decorator": "#EC7483",
 		"namespace": "#c58838",
 		"enumMember": "#F1A94D",
 		"customLiteral": "#F1A94D",
